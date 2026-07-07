@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promocion</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/jquery.timelinr-0.9.7.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="principal">
+            <header>
+                <nav class="menu">
+                    <h1>Maneskin</h1>
+                    <ul class="web">
+                        <li><a href="index.html"><i class="fa-regular fa-heart"></i> INICIO</a></li>
+                        <li><a href="nosotros.html"><i class="fa-solid fa-users"></i> NOSOTROS</a></li>
+                        <li><a href="blog.html"><i class="fa-solid fa-pen"></i> BLOG</a></li>
+                        <li><a href="galeria.html"><i class="fa-regular fa-image"></i> GALERIA</a></li>
+                        <li><a href="videos.html"><i class="fa-solid fa-film"></i> VIDEOS</a></li>
+                        <li><a href="promocion.html"><i class="fa-solid fa-tags"></i> PROMOCIONES</a></li>
+                        <li><a href="combos.html"><i class="fa-solid fa-box"></i> COMBOS</a></li>
+                        <li><a href="contactos.html"><i class="fa-solid fa-envelope"></i> CONTACTOS</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <h2>Promociones Especiales</h2>
+                <p class="subtitulo">¡Aprovecha nuestras promociones exclusivas! Compra tu entrada y llévate un póster autografiado de la banda.</p>
+                <div class="cupon">
+                    <h3>¡Promoción 2x1 en entradas!</h3>
+                    <p>Compra una entrada y obtén otra gratis para el próximo concierto de Måneskin.</p>
+                    <button id="BotonVentana">Reclamar Cupón</button>
+                </div>
+            </section>
+
+            <footer>
+                <p>Sígue sus redes sociales:</p>
+                <nav>
+                    <ul class="redes">
+                        <li><a href="https://x.com/thisismaneskin?lang=en" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/share/1CXxnrPsAC/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/maneskinofficial?igsh=d3V5aGJha3E2czIy" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@therealmaneskin?_r=1&_t=ZS-97Bj0BJvxAq" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+           $('#BotonVentana').click(function () {
+           Swal.fire({
+            title:'<h1>¡Recibe tu cupón!</h1>',
+            icon:'info',
+            html:'<strong>Tu cupón ha sido reclamado con éxito.</strong>',
+            showCloseButton: true,
+            confirmButtonText: 'Aceptar',
+            focusConfirm: false,
+            showCancelButton: true,
+            cancelButtonText: 'Cerrar'
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
